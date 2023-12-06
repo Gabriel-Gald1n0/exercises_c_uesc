@@ -1,0 +1,40 @@
+\doxysection{Referência do Arquivo Documentação\+\_\+\+Questoes\+COD/questao18.c}
+\hypertarget{questao18_8c}{}\label{questao18_8c}\index{Documentação\_QuestoesCOD/questao18.c@{Documentação\_QuestoesCOD/questao18.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{questao18_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Funções}
+\Hypertarget{questao18_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{questao18_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{questao18.c@{questao18.c}!main@{main}}
+\index{main@{main}!questao18.c@{questao18.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \ \textcolor{keywordtype}{float}\ venda\_produto\ =\ 1,\ salario;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \ \ \ \ \ \textcolor{keywordflow}{while}(venda\_produto\ >=\ 0)}
+\DoxyCodeLine{00007\ \ \ \ \ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Entre\ com\ a\ Venda(-\/1\ para\ finalizar):\ "{}});}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ scanf(\textcolor{stringliteral}{"{}\%f"{}},\ \&venda\_produto);}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(venda\_produto\ <\ 0)}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ salario\ =\ 200\ +\ venda\_produto*0.09;}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00018\ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Salario:\ \%.2f\(\backslash\)n"{}},salario);}
+\DoxyCodeLine{00019\ \ \ \ \ \}}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00021\ \}}
+
+\end{DoxyCode}

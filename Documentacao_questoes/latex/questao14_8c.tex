@@ -1,0 +1,47 @@
+\doxysection{Referência do Arquivo Documentação\+\_\+\+Questoes\+COD/questao14.c}
+\hypertarget{questao14_8c}{}\label{questao14_8c}\index{Documentação\_QuestoesCOD/questao14.c@{Documentação\_QuestoesCOD/questao14.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{questao14_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Funções}
+\Hypertarget{questao14_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{questao14_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{questao14.c@{questao14.c}!main@{main}}
+\index{main@{main}!questao14.c@{questao14.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00004\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00005\ \ \ \ \ \textcolor{keywordtype}{float}\ n1,n2,n3,n4,n5,nf,\ media,\ prova\_final;}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Digite\ as\ notas\ do\ aluno:\ "{}});}
+\DoxyCodeLine{00008\ \ \ \ \ scanf(\textcolor{stringliteral}{"{}\%f\ \%f\ \%f\ \%f\ \%f"{}},\ \&n1,\ \&n2,\ \&n3,\ \&n4,\ \&n5);}
+\DoxyCodeLine{00009\ }
+\DoxyCodeLine{00010\ \ \ \ \ media\ =\ (n1\ +\ n2\ +\ n3\ +\ n4\ +\ n5)/5;}
+\DoxyCodeLine{00011\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Media\ do\ semestre:\ \%2.f\(\backslash\)n"{}},media);}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordflow}{if}\ (media\ <\ 7.0)}
+\DoxyCodeLine{00014\ \ \ \ \ \{}
+\DoxyCodeLine{00015\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}O\ aluno\ esta\ na\ prova\ final\(\backslash\)n"{}});}
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Digite\ as\ notas\ do\ aluno:\ "{}});}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ scanf(\textcolor{stringliteral}{"{}\%f"{}},\ \&nf);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ prova\_final\ =\ (media\ +\ nf)/2;}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Nota\ final:\ \%2.f"{}},prova\_final);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \}\textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}aluno\ aprovado!\(\backslash\)n"{}});}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Nota\ final:\ \%2.f"{}},media);}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00028\ \}}
+
+\end{DoxyCode}

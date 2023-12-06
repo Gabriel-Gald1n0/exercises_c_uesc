@@ -1,0 +1,52 @@
+\doxysection{Referência do Arquivo Documentação\+\_\+\+Questoes\+COD/questao20.c}
+\hypertarget{questao20_8c}{}\label{questao20_8c}\index{Documentação\_QuestoesCOD/questao20.c@{Documentação\_QuestoesCOD/questao20.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{questao20_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Funções}
+\Hypertarget{questao20_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{questao20_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{questao20.c@{questao20.c}!main@{main}}
+\index{main@{main}!questao20.c@{questao20.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \textcolor{keywordtype}{int}\ numEmpregados;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \ \ \ \ printf(\textcolor{stringliteral}{"{}Digite\ o\ numero\ de\ empregados:\ "{}});}
+\DoxyCodeLine{00007\ \ \ \ \ scanf(\textcolor{stringliteral}{"{}\%d"{}},\ \&numEmpregados);}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 0;\ i\ <\ numEmpregados;\ i++)\ \{}
+\DoxyCodeLine{00010\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ horasTrabalhadas;}
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{float}\ valorHoraNormal,\ pagamentoBruto;}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Digite\ o\ numero\ de\ horas\ trabalhadas\ para\ o\ empregado\ \%d:\ "{}},\ i\ +\ 1);}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ scanf(\textcolor{stringliteral}{"{}\%d"{}},\ \&horasTrabalhadas);}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Digite\ o\ valor\ da\ hora\ normal\ para\ o\ empregado\ \%d:\ "{}},\ i\ +\ 1);}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ scanf(\textcolor{stringliteral}{"{}\%f"{}},\ \&valorHoraNormal);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (horasTrabalhadas\ <=\ 40)\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Sem\ horas\ extras}}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \ \ \ \ pagamentoBruto\ =\ horasTrabalhadas\ *\ valorHoraNormal;}
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \}\ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{//\ Com\ horas\ extras}}
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ horasNormais\ =\ 40;}
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ horasExtras\ =\ horasTrabalhadas\ -\/\ 40;}
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \ \ \ \ pagamentoBruto\ =\ (horasNormais\ *\ valorHoraNormal)\ +\ (horasExtras\ *\ 1.5\ *\ valorHoraNormal);}
+\DoxyCodeLine{00027\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00029\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}O\ pagamento\ bruto\ para\ o\ empregado\ \%d:\ \%.2f\(\backslash\)n\(\backslash\)n"{}},\ i\ +\ 1,\ pagamentoBruto);}
+\DoxyCodeLine{00030\ \ \ \ \ \}}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00033\ \}}
+
+\end{DoxyCode}

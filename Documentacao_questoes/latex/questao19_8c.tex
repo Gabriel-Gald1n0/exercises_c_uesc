@@ -1,0 +1,46 @@
+\doxysection{Referência do Arquivo Documentação\+\_\+\+Questoes\+COD/questao19.c}
+\hypertarget{questao19_8c}{}\label{questao19_8c}\index{Documentação\_QuestoesCOD/questao19.c@{Documentação\_QuestoesCOD/questao19.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsubsection*{Funções}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{questao19_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Funções}
+\Hypertarget{questao19_8c_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{questao19_8c_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{questao19.c@{questao19.c}!main@{main}}
+\index{main@{main}!questao19.c@{questao19.c}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00003\ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00004\ \ \ \ \ \ \textcolor{keywordtype}{float}\ capital\ =\ 1,\ juros,\ taxa,dias;}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \ \ \ \ \ \textcolor{keywordflow}{while}(capital\ >\ 0)}
+\DoxyCodeLine{00007\ \ \ \ \ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Entre\ com\ o\ valor\ do\ emprestimo(0\ para\ finalizar):\ "{}});}
+\DoxyCodeLine{00009\ \ \ \ \ \ \ \ \ scanf(\textcolor{stringliteral}{"{}\%f"{}},\ \&capital);}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}(capital\ <=\ 0)}
+\DoxyCodeLine{00012\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00014\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00015\ }
+\DoxyCodeLine{00016\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Entre\ com\ o\ valor\ a\ taxa\ de\ juros:\ "{}});}
+\DoxyCodeLine{00017\ \ \ \ \ \ \ \ \ scanf(\textcolor{stringliteral}{"{}\%f"{}},\ \&taxa);}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}Entre\ com\ o\ perido\ do\ emprestimo\ (dias):\ "{}});}
+\DoxyCodeLine{00020\ \ \ \ \ \ \ \ \ scanf(\textcolor{stringliteral}{"{}\%f"{}},\ \&dias);}
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ juros\ =\ capital*taxa*dias/365;}
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \ printf(\textcolor{stringliteral}{"{}O\ valor\ dos\ juros:\ \$\%.2f\(\backslash\)n\(\backslash\)n"{}},juros);}
+\DoxyCodeLine{00025\ \ \ \ \ \}}
+\DoxyCodeLine{00026\ \ \ \ \ \textcolor{keywordflow}{return}\ 0;}
+\DoxyCodeLine{00027\ \}}
+
+\end{DoxyCode}
